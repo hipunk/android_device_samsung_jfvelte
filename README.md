@@ -1,4 +1,4 @@
-# Device configuration for Galaxy S4 (International)
+# Device configuration for Galaxy S4 Value Edition
 
 ## Spec Sheet
 

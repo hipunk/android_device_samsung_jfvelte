@@ -1,6 +1,6 @@
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2017-08-01
+    ro.lineage.build.vendor_security_patch=2016-10-01
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \

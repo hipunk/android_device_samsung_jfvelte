@@ -13,17 +13,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit from jf-common
--include device/samsung/jf-common/BoardConfigCommon.mk
+# Inherit from jfve-common
+-include device/samsung/jfve-common/BoardConfigCommon.mk
 
 # Inherit from proprietary vendor
 -include vendor/samsung/jfltexx/BoardConfigVendor.mk
 
 # Manifest
-DEVICE_MANIFEST_FILE += device/samsung/jfltexx/manifest.xml
+DEVICE_MANIFEST_FILE += device/samsung/jfvelte/manifest.xml
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := GT-I9505,GT-I9505G,i9505,i9505g,jflte,jfltecan,jfltecri,jfltetmo,jfltexx,jgedlte,SGH-I337M,SGH-M919
+TARGET_OTA_ASSERT_DEVICE := GT-I9515,GT-I9515L,I9515,I9515L,i9515,i9515l,jfvelte
 
 # Kernel
-TARGET_KERNEL_VARIANT_CONFIG := jf_eur_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := jfve_eur_defconfig

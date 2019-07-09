@@ -16,21 +16,21 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from jfltexx device
-$(call inherit-product, device/samsung/jfltexx/device.mk)
+# Inherit from jfvelte device
+$(call inherit-product, device/samsung/jfvelte/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_jfltexx
-PRODUCT_DEVICE := jfltexx
+PRODUCT_NAME := lineage_jfvelte
+PRODUCT_DEVICE := jfvelte
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := Samsung
-PRODUCT_MODEL := GT-I9505
+PRODUCT_MODEL := GT-I9515
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=jfltexx \
-    TARGET_DEVICE=jfltexx \
-    PRIVATE_BUILD_DESC="jfltexx-user 5.0.1 LRX22C I9505XXUHQK1 release-keys"
+    PRODUCT_NAME=jfvelte \
+    TARGET_DEVICE=jfvelte \
+    PRIVATE_BUILD_DESC="jfveltexx-user 5.0.1 LRX22C I9515XXS1BQD2 release-keys"
 
-BUILD_FINGERPRINT := "samsung/jfltexx/jflte:5.0.1/LRX22C/I9505XXUHQK1:user/release-keys"
+BUILD_FINGERPRINT := "samsung/jfveltexx/jfvelte:5.0.1/LRX22C/I9515XXS1BQD2:user/release-keys"

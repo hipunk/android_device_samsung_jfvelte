@@ -13,18 +13,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit from jf-common
-$(call inherit-product, device/samsung/jf-common/jf-common.mk)
+# Inherit from jfve-common
+$(call inherit-product, device/samsung/jfve-common/jfve-common.mk)
 
 # Also get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/jfltexx/jfltexx-vendor.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/jfltexx/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/jfvelte/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml
 
-# Call jfltexx system props
-$(call inherit-product, device/samsung/jfltexx/system_prop.mk)
+# Call jfvelte system props
+$(call inherit-product, device/samsung/jfvelte/system_prop.mk)
